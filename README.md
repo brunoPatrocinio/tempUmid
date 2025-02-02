@@ -34,3 +34,4 @@ After set the pins correctly, it's time to set the node.js server into the PC.
 Make sure to have all the dependencies to run.
 **See the Package.json to confirm.**
 ***********************************************************************************************************************
+Download the server files, open VScode and run.
