@@ -4,14 +4,14 @@ A prototype to collect data from de Temperature and Humidity sensor and send the
 This program is set to be used with ESP 32 . It' was loaded to an Esp 32 Wroom.
 See the design schematics to know how to use and connect the PINS.
 
-**********************************************************************************************************************
+**********************************************************************************************************************************************************************************************
 **Components List**
 * Esp32 Wroom;
 * Jumper Wires;
 * SD Card Reader
 * DHT 11 Temperature and Humidity Sensor;
 * Display LCD 16x2 - With I2C interface.
-**********************************************************************************************************************
+**********************************************************************************************************************************************************************************************
 **Important Note**
 To make the Esp32 send the data to the server, it uses the REST architecture.
 So it mount the URL and send data.
@@ -29,9 +29,14 @@ portNumber
 RouteName (Example: /data)
 
 The program at the esp32 loads the data from the file, fill the necessary variables, connect to the WiFi and mount the URL to send data to the Node server.
-***********************************************************************************************************************
+***********************************************************************************************************************************************************************************************
 After set the pins correctly, it's time to set the node.js server into the PC.
 Make sure to have all the dependencies to run.
 **See the Package.json to confirm.**
-***********************************************************************************************************************
-Download the server files, open VScode and run.
+***********************************************************************************************************************************************************************************************
+Download the server files, open the VScode.
+**In the index.js file, make sure the port is the same that you load from the Sd Card file.**
+************************************************************************************************************************************************************************************************
+**Note 3**
+**The node.js part is not well developed, but it works. Feel yourself free to make improvements and make better than me. :)**
+*************************************************************************************************************************************************************************************************
