@@ -18,7 +18,7 @@ So it mount the URL and send data.
 It needs to connect to the WiFi network as well.
 
 **Note 2**
-Format a Micro Sd card.
+Format a Micro Sd card to FAT32.
 After that, create a file name called "data.txt" and put in the roof directory of the sd card.
 inside the file type the information the program needs to load from the Sd card. Starting at the first line and finishing at line 5.(SSID, password, ip, port and route).
 like this:
