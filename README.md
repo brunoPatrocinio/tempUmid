@@ -14,12 +14,12 @@ See the design schematics to know how to use and connect the PINS.
 **********************************************************************************************************************************************************************************************
 **Important Note**
 To make the Esp32 send the data to the server, it uses the REST architecture.
-So it mount the URL and send data.
+So it mounts the URL and send data.
 It needs to connect to the WiFi network as well.
 
 **Note 2**
 Format a Micro Sd card to FAT32.
-After that, create a file name called "data.txt" and put in the roof directory of the sd card.
+After that, create a file named "data.txt" and put in the roof directory of the sd card.
 inside the file type the information the program needs to load from the Sd card. Starting at the first line and finishing at line 5.(SSID, password, ip, port and route).
 like this:
 yourNetwork
@@ -28,7 +28,7 @@ ipNumber  (Example: 192.168.0.17)
 portNumber
 RouteName (Example: /data)
 
-The program at the esp32 loads the data from the file, fill the necessary variables, connect to the WiFi and mount the URL to send data to the Node server.
+The program at the esp32 loads the data from the file, fill up the necessary variables, connect to the WiFi and mount the URL to send data to the Node server.
 ***********************************************************************************************************************************************************************************************
 After set the pins correctly, it's time to set the node.js server into the PC.
 Make sure to have all the dependencies to run.
