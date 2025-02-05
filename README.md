@@ -1,5 +1,5 @@
 # tempUmid
-A prototype to collect data from de Temperature and Humidity sensor and send the data to a Node JS server by an API.
+A prototype to collect data from the Temperature and Humidity sensor and send the data to a Node JS server by an API.
 
 This program is set to be used with ESP 32 . It' was loaded to an Esp 32 Wroom.
 See the design schematics to know how to use and connect the PINS.
