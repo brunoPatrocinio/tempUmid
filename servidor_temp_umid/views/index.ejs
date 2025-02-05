@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Temperatura</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        h1 { color: #333; }
+        .data { font-size: 1.5em; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Monitor de Temperatura e Umidade</h1>
+    <div class="data">
+        <p>Temperatura: <span id="temperature"><%= sensorData.temperature %></span>°C</p>
+        <p>Umidade: <span id="humidity"><%= sensorData.humidity %></span>%</p>
+    </div>
+    <script>
+        setInterval(async () => {
+            const response = await fetch("/data.json");
+            const data = await response.json();
+            document.getElementById("temperature").textContent = data.temperature;
+            document.getElementById("humidity").textContent = data.humidity;
+        }, 5000);
+    </script>
+</body>
+</html>

@@ -142,6 +142,10 @@ void taskSendData(void* parameter) {
 
         String jsonPayload = String("{\"temperature\":") + temp + ",\"humidity\":" + hum + "}";
         int httpResponseCode = http.POST(jsonPayload);
+        lcd.clear();
+        lcd.print("Temp: ");lcd.print(temp);lcd.print(" c");
+        lcd.setCursor(0, 1);
+        lcd.print("Umid: ");lcd.print(hum);
 
         if (httpResponseCode > 0) {
           String response = http.getString();
